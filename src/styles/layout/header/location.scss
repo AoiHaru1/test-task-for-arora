@@ -1,0 +1,40 @@
+@import "../../abstracts/variables";
+
+.header {
+  &__location {
+    &-list {
+      gap: 16px;
+      height: 100%;
+      margin-right: 62px;
+    }
+
+    &-item {
+      width: 216px;
+      gap: 5px;
+    }
+
+    &-name {
+      gap: 10px;
+      font-family: "Roboto Slab", serif;
+      font-size: 12px;
+      line-height: 16px;
+      margin-left: 2px;
+
+      .name {
+        .marked {
+          color: $brand;
+        }
+      }
+    }
+
+    &-number {
+      .number {
+        font-family: "Roboto Slab", serif;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: $black;
+      }
+    }
+  }
+}
