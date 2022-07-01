@@ -15,48 +15,208 @@
     <header class="header">
       <div class="header__content-container">
         <div class="header__logo">
-          <img src="./assets/images/header-logo.png" alt="Vivat Pizza">
+          <img src="./assets/images/header/header-logo.png" alt="Vivat Pizza">
         </div>
         <ul class="header__location-list flex-row">
           <li class="location flex-column">
-            <div class="location__title-container flex-row">
+            <div class="location__title-container flex-row roboto-slab-regular">
               <img class="location__image" src="./assets/icons/map-mark.svg" alt="map-mark">
               <p class="location__name"><a href="#!" class="link">Ховрино</a> Круглосуточно</p>
             </div>
             <div class="location__number-container">
-              <a href="tel:+74959806622" class="location__number">+7 (495) 980-66-22</p>
+              <a href="tel:+74959806622" class="location__number roboto-slab-medium">+7 (495) 980-66-22</a>
             </div>
           </li>
           <li class="location flex-column">
-            <div class="location__title-container flex-row">
+            <div class="location__title-container flex-row roboto-slab-regular">
               <img class="location__image" src="./assets/icons/map-mark.svg" alt="map-mark">
               <p class="location__name"><a href="#!" class="link">Измайлово</a> Круглосуточно</p>
             </div>
             <div class="location__number-container">
-              <a href="tel:+74957305566" class="location__number">+7 (495) 730-55-66</p>
+              <a href="tel:+74957305566" class="location__number roboto-slab-medium">+7 (495) 730-55-66</a>
             </div>
           </li>
           <li class="location flex-column">
-            <div class="location__title-container flex-row">
+            <div class="location__title-container flex-row roboto-slab-regular">
               <img class="location__image" src="./assets/icons/map-mark.svg" alt="map-mark">
               <p class="location__name"><a href="#!" class="link">Мытищи</a> Круглосуточно</p>
             </div>
             <div class="location__number-container">
-              <a href="tel:+74955004040" class="location__number">+7 (495) 500-40-40</p>
+              <a href="tel:+74955004040" class="location__number roboto-slab-medium">+7 (495) 500-40-40</a>
             </div>
           </li>
           <li class="location flex-column">
-            <div class="location__title-container flex-row">
+            <div class="location__title-container flex-row roboto-slab-regular">
               <img class="location__image" src="./assets/icons/map-mark.svg" alt="map-mark">
               <p class="location__name"><a href="#!" class="link">Хор.-Мневники</a> Круглосуточно</p>
             </div>
             <div class="location__number-container">
-              <a href="tel:+74959806622" class="location__number">+7 (495) 980-66-22</p>
+              <a href="tel:+74959806622" class="location__number roboto-slab-medium">+7 (495) 980-66-22</a>
             </div>
           </li>
         </ul>
       </div>
     </header>
+    <main class="main">
+      <div class="main__content-container">
+        <section class="stepper">
+          <div class="stepper__container flex-row">
+            <span class="stepper__step roboto-slab-bold active">Корзина</span>
+            <span class="stepper__step roboto-slab-bold">Оформление заказа</span>
+            <span class="stepper__step roboto-slab-bold">Готово</span>
+          </div>
+        </section>
+        <section class="menu">
+          <div class="menu__container">
+            <ul class="menu__item-list flex-column">
+              <li class="menu__item flex-row">
+                <img src="./assets/images/menu/menu-item-1.png" alt="Cheeseburger BBQ" class="menu__img">
+                <div class="menu__text-container">
+                  <h4 class="menu__title roboto-slab-bold">Чизбургер барбекю</h4>
+                  <span class="menu__description roboto-slab-regular">Соус коктейль, фарш из отборной говядины,
+                    маринованные огурцы, спелые
+                    томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук</span>
+                  <div class="price flex-row">
+                    <div class="price__initial roboto-slab-bold">
+                      <span class="price__outdated price__outdated-mg-fix">930</span>
+                      8888 ₽
+                    </div>
+                    <div class="price__counter flex-row roboto-slab-medium">
+                      <button class="price__decreament"></button>
+                      <span class="price__total-count">2</span>
+                      <button class="price__increament"></button>
+                    </div>
+                    <div class="price__total roboto-slab-bold">
+                      <span class="price__outdated price__outdated-mg-fix">1860</span>
+                      8888 ₽
+                    </div>
+                  </div>
+                </div>
+                <button class="menu__remove-btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3ZM12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0Z" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.31066 7.18934C8.72487 6.60355 7.77513 6.60355 7.18934 7.18934C6.60355 7.77513 6.60355 8.72487 7.18934 9.31066L9.87868 12L7.18934 14.6893C6.60355 15.2751 6.60355 16.2249 7.18934 16.8107C7.77513 17.3964 8.72487 17.3964 9.31066 16.8107L12 14.1213L14.6893 16.8107C15.2751 17.3964 16.2249 17.3964 16.8107 16.8107C17.3964 16.2249 17.3964 15.2751 16.8107 14.6893L14.1213 12L16.8107 9.31066C17.3964 8.72487 17.3964 7.77513 16.8107 7.18934C16.2249 6.60355 15.2751 6.60355 14.6893 7.18934L12 9.87868L9.31066 7.18934Z" />
+                  </svg>
+                </button>
+              </li>
+              <li class="menu__item flex-row">
+                <img src="./assets/images/menu/menu-item-2.png" alt="Supreme" class="menu__img">
+                <div class="menu__text-container">
+                  <h4 class="menu__title roboto-slab-bold">Суприм</h4>
+                  <span class="menu__description roboto-slab-regular">Соус томатный, сыр моцарелла, колбаса пепперони,
+                    ветчина, лук, сладкий
+                    перец, грибной микс, свинина, говядина, оливки черные</span>
+                  <div class="price flex-row">
+                    <div class="price__initial roboto-slab-bold">690 ₽</div>
+                    <div class="price__counter flex-row roboto-slab-medium">
+                      <button class="price__decreament"></button>
+                      <span class="price__total-count">1</span>
+                      <button class="price__increament"></button>
+                    </div>
+                    <div class="price__total roboto-slab-bold">690 ₽</div>
+                  </div>
+                </div>
+                <button class="menu__remove-btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3ZM12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0Z" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.31066 7.18934C8.72487 6.60355 7.77513 6.60355 7.18934 7.18934C6.60355 7.77513 6.60355 8.72487 7.18934 9.31066L9.87868 12L7.18934 14.6893C6.60355 15.2751 6.60355 16.2249 7.18934 16.8107C7.77513 17.3964 8.72487 17.3964 9.31066 16.8107L12 14.1213L14.6893 16.8107C15.2751 17.3964 16.2249 17.3964 16.8107 16.8107C17.3964 16.2249 17.3964 15.2751 16.8107 14.6893L14.1213 12L16.8107 9.31066C17.3964 8.72487 17.3964 7.77513 16.8107 7.18934C16.2249 6.60355 15.2751 6.60355 14.6893 7.18934L12 9.87868L9.31066 7.18934Z" />
+                  </svg>
+                </button>
+                <img src="./assets/images/menu/new-tag.png" alt="" class="menu__new">
+              </li>
+              <li class="menu__item flex-row">
+                <img src="./assets/images/menu/menu-item-3.png" alt="Burger 'Two cheeses'" class="menu__img">
+                <div class="menu__text-container">
+                  <h4 class="menu__title roboto-slab-bold">Бургер «Два сыра»</h4>
+                  <span class="menu__description roboto-slab-regular">Ароматная котлета из мраморной говядины с сыром
+                    чеддер и моцарелла,<br>
+                    хрустящим луком, маринованными корнишонами, свежими томатами, соусом коктейль и барбекю в мягкой
+                    пшеничной булочке. Картофель и соус приобретается отдельно</span>
+                  <div class="price flex-row">
+                    <div class="price__initial roboto-slab-bold">180 ₽</div>
+                    <div class="price__counter flex-row roboto-slab-medium">
+                      <button class="price__decreament"></button>
+                      <span class="price__total-count">3</span>
+                      <button class="price__increament"></button>
+                    </div>
+                    <div class="price__total roboto-slab-bold">540 ₽</div>
+                  </div>
+                </div>
+                <button class="menu__remove-btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3ZM12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0Z" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.31066 7.18934C8.72487 6.60355 7.77513 6.60355 7.18934 7.18934C6.60355 7.77513 6.60355 8.72487 7.18934 9.31066L9.87868 12L7.18934 14.6893C6.60355 15.2751 6.60355 16.2249 7.18934 16.8107C7.77513 17.3964 8.72487 17.3964 9.31066 16.8107L12 14.1213L14.6893 16.8107C15.2751 17.3964 16.2249 17.3964 16.8107 16.8107C17.3964 16.2249 17.3964 15.2751 16.8107 14.6893L14.1213 12L16.8107 9.31066C17.3964 8.72487 17.3964 7.77513 16.8107 7.18934C16.2249 6.60355 15.2751 6.60355 14.6893 7.18934L12 9.87868L9.31066 7.18934Z" />
+                  </svg>
+                </button>
+                <img src="./assets/images/menu/new-tag.png" alt="" class="menu__new">
+              </li>
+              <li class="menu__item flex-row">
+                <img src="./assets/images/menu/menu-item-4.png" alt="Sushi Unagi" class="menu__img">
+                <div class="menu__text-container">
+                  <h4 class="menu__title roboto-slab-bold">Суши Унаги</h4>
+                  <span class="menu__description roboto-slab-regular">Угорь</span>
+                  <div class="price flex-row">
+                    <div class="price__initial roboto-slab-bold">120 ₽</div>
+                    <div class="price__counter flex-row roboto-slab-medium">
+                      <button class="price__decreament"></button>
+                      <span class="price__total-count">10</span>
+                      <button class="price__increament"></button>
+                    </div>
+                    <div class="price__total roboto-slab-bold">1200 ₽</div>
+                  </div>
+                </div>
+                <button class="menu__remove-btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3ZM12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0Z" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.31066 7.18934C8.72487 6.60355 7.77513 6.60355 7.18934 7.18934C6.60355 7.77513 6.60355 8.72487 7.18934 9.31066L9.87868 12L7.18934 14.6893C6.60355 15.2751 6.60355 16.2249 7.18934 16.8107C7.77513 17.3964 8.72487 17.3964 9.31066 16.8107L12 14.1213L14.6893 16.8107C15.2751 17.3964 16.2249 17.3964 16.8107 16.8107C17.3964 16.2249 17.3964 15.2751 16.8107 14.6893L14.1213 12L16.8107 9.31066C17.3964 8.72487 17.3964 7.77513 16.8107 7.18934C16.2249 6.60355 15.2751 6.60355 14.6893 7.18934L12 9.87868L9.31066 7.18934Z" />
+                  </svg>
+                </button>
+                <img src="./assets/images/menu/new-tag.png" alt="" class="menu__new">
+              </li>
+              <li class="menu__item flex-row">
+                <img src="./assets/images/menu/menu-item-5.png" alt="Ume" class="menu__img">
+                <div class="menu__text-container">
+                  <h4 class="menu__title roboto-slab-bold">Умэ</h4>
+                  <span class="menu__description roboto-slab-regular">Лосось, угорь, сыр «Филадельфия», авокадо</span>
+                  <div class="price flex-row">
+                    <div class="price__initial roboto-slab-bold">
+                      <span class="price__outdated">420</span>
+                      385 ₽
+                    </div>
+                    <div class="price__counter flex-row roboto-slab-medium">
+                      <button class="price__decreament"></button>
+                      <span class="price__total-count">2</span>
+                      <button class="price__increament"></button>
+                    </div>
+                    <div class="price__total roboto-slab-bold">
+                      <span class="price__outdated">840</span>
+                      770 ₽
+                    </div>
+                  </div>
+                </div>
+                <button class="menu__remove-btn">
+                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3ZM12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0Z" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                      d="M9.31066 7.18934C8.72487 6.60355 7.77513 6.60355 7.18934 7.18934C6.60355 7.77513 6.60355 8.72487 7.18934 9.31066L9.87868 12L7.18934 14.6893C6.60355 15.2751 6.60355 16.2249 7.18934 16.8107C7.77513 17.3964 8.72487 17.3964 9.31066 16.8107L12 14.1213L14.6893 16.8107C15.2751 17.3964 16.2249 17.3964 16.8107 16.8107C17.3964 16.2249 17.3964 15.2751 16.8107 14.6893L14.1213 12L16.8107 9.31066C17.3964 8.72487 17.3964 7.77513 16.8107 7.18934C16.2249 6.60355 15.2751 6.60355 14.6893 7.18934L12 9.87868L9.31066 7.18934Z" />
+                  </svg>
+                </button>
+                <img src="./assets/images/menu/new-tag.png" alt="" class="menu__new">
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
   </div>
 </body>
 

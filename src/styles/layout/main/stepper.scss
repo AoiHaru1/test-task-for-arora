@@ -1,0 +1,43 @@
+@import "../../abstracts/variables";
+
+.stepper {
+  &__container {
+    position: relative;
+    justify-content: space-between;
+    max-width: 936px;
+    overflow: hidden;
+
+    &::after {
+      content: "";
+      border-bottom: 4px dotted $black20;
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      z-index: -1;
+    }
+  }
+
+  &__step {
+    color: $black20;
+    font-size: 30px;
+    line-height: 44px;
+    background-color: $white;
+  }
+
+  &__step:first-child {
+    padding-right: 17px;
+  }
+
+  &__step:nth-child(2) {
+    padding: 0 18;
+  }
+
+  &__step:last-child {
+    padding-left: 18px;
+    padding-right: 0px;
+  }
+
+  .active {
+    color: $black !important;
+  }
+}

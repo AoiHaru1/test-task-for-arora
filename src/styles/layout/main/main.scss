@@ -1,0 +1,15 @@
+@import './stepper.scss';
+@import './menu.scss';
+
+.main {
+  margin-top: 75px;
+  padding: 0.1px;
+  
+  .menu {
+    margin-top: 39px;
+  }
+
+  .stepper {
+    margin-top: 2px;
+  }
+}

@@ -15,10 +15,10 @@
 
   &__title-container {
     gap: 10px;
-    font-family: "Roboto Slab", serif;
     font-size: 12px;
     line-height: 16px;
     margin-left: 2px;
+    color: $black60
   }
 
   &__name .link {
@@ -26,8 +26,6 @@
   }
 
   &__number {
-    font-family: "Roboto Slab", serif;
-    font-weight: 500;
     font-size: 18px;
     line-height: 24px;
     color: $black;
