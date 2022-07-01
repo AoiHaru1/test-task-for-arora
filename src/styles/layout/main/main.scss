@@ -2,6 +2,8 @@
 @import './menu.scss';
 @import './bonus.scss';
 @import './gift.scss';
+@import './reccomendations.scss';
+@import './order-end.scss';
 
 .main {
   margin-top: 75px;
@@ -26,5 +28,20 @@
 
   .gifts {
     margin-top: 65px;
+  }
+
+  .reccomendations {
+    overflow-x: hidden;
+    margin-top: 65px;
+  }
+
+  .line-throught {
+    margin-top: 64px;
+    border-bottom: 2px solid $black30;
+  }
+
+  .order-end {
+    width: 331px;
+    margin-left: auto;
   }
 }

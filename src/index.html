@@ -11,8 +11,9 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <header class="header">
+
+  <header class="header">
+    <div class="wrapper">
       <div class="header__content-container">
         <div class="header__logo">
           <img src="./assets/images/header/header-logo.png" alt="Vivat Pizza">
@@ -56,8 +57,10 @@
           </li>
         </ul>
       </div>
-    </header>
-    <main class="main">
+    </div>
+  </header>
+  <main class="main">
+    <div class="wrapper">
       <div class="main__content-container">
         <div class="stepper">
           <div class="stepper__container flex-row">
@@ -264,56 +267,115 @@
           <div class="reccomendations__content-container">
             <h2 class="reccomendations__heading roboto-slab-bold">Рекомендуем</h2>
             <ul class="reccomendations__item-list flex-row">
-              <li class="reccomendations__item">
+              <li class="reccomendations__item flex-column">
                 <img src="./assets/images/reccomendations/reccomendations-item-1.png" alt="Cheeseburger BBQ"
                   class="reccomendations__img">
-                <h4 class="reccomendations__title">Чизбургер барбекю</h4>
-                <p class="reccomendations__description">Соус коктейль, фарш из отборной говядины, маринованные огурцы,
+                <h4 class="reccomendations__title roboto-slab-bold">Чизбургер барбекю</h4>
+                <p class="reccomendations__description roboto-slab-regular">Соус коктейль, фарш из отборной говядины,
+                  маринованные огурцы,
                   спелые томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук</p>
                 <button class="reccomendations__btn btn-light">от 287 ₽</button>
               </li>
-              <li class="reccomendations__item">
+              <li class="reccomendations__item flex-column">
                 <img src="./assets/images/reccomendations/reccomendations-item-2.png" alt="Burger 'Two cheeses'"
                   class="reccomendations__img">
-                <h4 class="reccomendations__title">Бургер «Два сыра»</h4>
-                <p class="reccomendations__description">Ароматная котлета из мраморной говядины с сыром чеддер и
+                <h4 class="reccomendations__title roboto-slab-bold">Бургер «Два сыра»</h4>
+                <p class="reccomendations__description roboto-slab-regular">Ароматная котлета из мраморной говядины с
+                  сыром чеддер и
                   моцарелла, хрустящим луком, маринованными корнишонами, свежими томатами, соусом коктейль и барбекю в
                   мягкой пшеничной булочке. Картофель и соус приобретается отдельно</p>
                 <button class="reccomendations__btn btn">387 ₽</button>
-                <img src="./assets/images/shared/new-tag.png" alt="new">
+                <img class="reccomendations__tag" src="./assets/images/shared/new-tag.png" alt="new">
               </li>
-              <li class="reccomendations__item">
+              <li class="reccomendations__item flex-column">
                 <img src="./assets/images/reccomendations/reccomendations-item-3.png" alt="Sushi Ebi"
                   class="reccomendations__img">
-                <h4 class="reccomendations__title">Суши Эби</h4>
-                <p class="reccomendations__description">Креветка</p>
+                <h4 class="reccomendations__title roboto-slab-bold">Суши Эби</h4>
+                <p class="reccomendations__description roboto-slab-regular">Креветка</p>
                 <button class="reccomendations__btn btn">130 ₽</button>
-                <img src="./assets/images/shared/new-tag.png" alt="new">
+                <img class="reccomendations__tag" src="./assets/images/shared/new-tag.png" alt="new">
               </li>
-              <li class="reccomendations__item">
+              <li class="reccomendations__item flex-column">
                 <img src="./assets/images/reccomendations/reccomendations-item-1.png" alt="Cheeseburger BBQ"
                   class="reccomendations__img">
-                <h4 class="reccomendations__title">Чизбургер барбекю</h4>
-                <p class="reccomendations__description">Соус коктейль, фарш из отборной говядины, маринованные огурцы,
+                <h4 class="reccomendations__title roboto-slab-bold">Чизбургер барбекю</h4>
+                <p class="reccomendations__description roboto-slab-regular">Соус коктейль, фарш из отборной говядины,
+                  маринованные огурцы,
                   спелые томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук</p>
-                <button class="reccomendations__btn btn">от 287 ₽</button>
+                <button class="reccomendations__btn btn-light">от 287 ₽</button>
               </li>
-              <li class="reccomendations__item">
+              <li class="reccomendations__item flex-column">
                 <img src="./assets/images/reccomendations/reccomendations-item-2.png" alt="Burger 'Two cheeses'"
                   class="reccomendations__img">
-                <h4 class="reccomendations__title">Бургер «Два сыра»</h4>
-                <p class="reccomendations__description">Ароматная котлета из мраморной говядины с сыром чеддер и
+                <h4 class="reccomendations__title roboto-slab-bold">Бургер «Два сыра»</h4>
+                <p class="reccomendations__description roboto-slab-regular">Ароматная котлета из мраморной говядины с
+                  сыром чеддер и
                   моцарелла, хрустящим луком, маринованными корнишонами, свежими томатами, соусом коктейль и барбекю в
                   мягкой пшеничной булочке. Картофель и соус приобретается отдельно</p>
                 <button class="reccomendations__btn btn">387 ₽</button>
-                <img src="./assets/images/shared/new-tag.png" alt="new">
+                <img class="reccomendations__tag" src="./assets/images/shared/new-tag.png" alt="new">
               </li>
             </ul>
           </div>
         </div>
+        <div class="line-throught"></div>
+        <div class="order-end flex-column">
+          <div class="order-end__total-price roboto-slab-bold">
+            <span>Сумма заказа: <s>4200</s> 3580 ₽</span>
+          </div>
+          <button class="order-end__continue-btn btn">Далее</button>
+        </div>
       </div>
-    </main>
-  </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__content-container flex-row">
+        <div class="footer__link-section flex-row">
+          <ul class="footer__link-list flex-column roboto-slab-regular">
+            <li class="footer__link"><a href="#!">Меню</a></li>
+            <li class="footer__link"><a href="#!">Барное меню</a></li>
+            <li class="footer__link"><a href="#!">Ресторан</a></li>
+            <li class="footer__link"><a href="#!">Акции</a></li>
+            <li class="footer__link"><a href="#!">Блюда за баллы</a></li>
+          </ul>
+          <ul class="footer__link-list flex-column roboto-slab-regular">
+            <li class="footer__link"><a href="#!">Доставка</a></li>
+            <li class="footer__link"><a href="#!">Отзывы</a></li>
+            <li class="footer__link"><a href="#!">Маленький кондитер</a></li>
+            <li class="footer__link"><a href="#!">Подарочные карты</a></li>
+          </ul>
+          <ul class="footer__link-list flex-column roboto-slab-regular">
+            <li class="footer__link"><a href="#!">О нас</a></li>
+            <li class="footer__link"><a href="#!">Вакансии</a></li>
+            <li class="footer__link"><a href="#!">События</a></li>
+            <li class="footer__link"><a href="#!">Статьи</a></li>
+            <li class="footer__link"><a href="#!">Контакты</a></li>
+          </ul>
+        </div>
+        <div class="footer__additional flex-column">
+          <div class="footer__app-list flex-row">
+            <a href="#!" class="footer__app">
+              <img src="./assets/images/footer/visa.png" alt="visa">
+            </a>
+            <a href="#!" class="footer__app">
+              <img src="./assets/images/footer/mastercard.png" alt="mastercard">
+            </a>
+            <a href="#!" class="footer__app">
+              <img src="./assets/images/footer/google-Play.png" alt="google play">
+            </a>
+            <a href="#!" class="footer__app">
+              <img src="./assets/images/footer/app-store.png" alt="app store">
+            </a>
+          </div>
+          <div class="footer__security">
+            <p class="footer__info roboto-slab-regular">2004 - 2020 © Vivat Pizza. <a href="#!">Договор публичной оферты</a><br>
+              Использование материалов с сайта без нашего ведома незаконно</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>

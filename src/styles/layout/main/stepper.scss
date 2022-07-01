@@ -6,6 +6,7 @@
     justify-content: space-between;
     max-width: 936px;
     overflow: hidden;
+    user-select: none;
 
     &::after {
       content: "";

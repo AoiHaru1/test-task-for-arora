@@ -1,0 +1,23 @@
+@import "../../abstracts/variables";
+
+.footer {
+  &__additional {
+    gap: 30px;
+  }
+
+  &__app-list {
+    gap: 15px;
+    align-items: center;
+  }
+
+  &__info {
+    font-size: 12px;
+    line-height: 16px;
+    color: rgb(217, 217, 217);
+    text-align: end;
+
+    a {
+      color: $brand;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import "../../abstracts/variables";
+
+.order-end {
+  gap: 32px;
+  margin-top: 32px;
+
+  &__total-price {
+    text-align: end;
+    span {
+      font-size: 18px;
+      line-height: 24px;
+      color: $black80;
+    }
+
+    s {
+      color: $black40;
+    }
+  }
+
+  &__continue-btn {
+    width: 331px;
+    height: 64px;
+    font-size: 18px;
+    line-height: 24px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 5px rgba(0, 0, 0, 0.35), 0px 6px 16px rgba(0, 0, 0, 0.28);
+  }
+}

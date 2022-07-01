@@ -1,0 +1,16 @@
+@import "../../abstracts/variables";
+
+.footer {
+  &__link-section {
+    gap: 40px;
+    flex-basis: 640px;
+  }
+
+  &__link-list {
+    gap: 8px;
+    flex-basis: 186px;
+    font-size: 14px;
+    line-height: 20px;
+    color: rgb(217, 217, 217);
+  }
+}

@@ -1,0 +1,62 @@
+@import "../../abstracts/variables";
+
+.reccomendations {
+  &__heading {
+    font-size: 30px;
+    line-height: 44px;
+    color: $black80;
+  }
+
+  &__item-list {
+    margin-top: 39px;
+    gap: 16px;
+  }
+
+  &__item {
+    position: relative;
+    background-color: $black10;
+    gap: 16px;
+    padding-bottom: 16px;
+    height: 100%;
+    border-radius: 8px;
+  }
+
+  &__img {
+    border-radius: 8px 8px 0 0;
+  }
+
+  &__title {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 16px 0 16px;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0 16px 0 16px;
+    color: $black60;
+  }
+
+  &__btn {
+    width: 109px;
+    height: 40px;
+    align-self: flex-end;
+    margin-right: 16px;
+    font-size: 18px;
+    line-height: 24px;
+    font-family: "Roboto Slab";
+    font-weight: 700;
+    white-space: nowrap;
+  }
+
+  &__btn.btn-light {
+    width: 134px;
+    height: 40px;
+  }
+
+  &__tag {
+    position: absolute;
+    top: 5px;
+  }
+}
