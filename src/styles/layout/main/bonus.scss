@@ -1,0 +1,71 @@
+@import "../../abstracts/variables";
+
+.bonus {
+  &__content-container {
+    padding: 40px;
+    gap: 40px;
+  }
+
+  &__title {
+    font-size: 22px;
+    line-height: 32px;
+    color: $black80;
+    margin-top: 1px;
+  }
+
+  &__clarification {
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 12px;
+    color: $black80;
+
+    &:last-of-type {
+      margin-top: 20px;
+    }
+  }
+
+  &__promocode {
+    gap: 15px;
+  }
+
+  &__input {
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid $black50;
+    border-radius: 30px;
+    text-indent: 15px;
+    &::placeholder {
+      font-family: "Roboto Slab";
+      font-weight: 400;
+      font-size: 16px;
+      color: $black20;
+    }
+  }
+
+  &__accept-btn {
+    max-width: 160px;
+    height: 40px;
+    align-self: flex-end;
+    margin-top: 1px;
+  }
+
+  &__total-price {
+    span {
+      font-size: 18px;
+      line-height: 24px;
+      color: $black80;
+    }
+
+    s {
+      color: $black20;
+    }
+  }
+
+  &__continue-btn {
+    max-width: 331px;
+    height: 64px;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
