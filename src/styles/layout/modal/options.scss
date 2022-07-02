@@ -1,0 +1,68 @@
+@import "../../abstracts/variables";
+
+.modal {
+  &__img {
+    margin-top: 1px;
+  }
+  
+  &__size-options, &__type-options {
+    max-width: 428px;
+    height: 40px;
+    margin-top: 20px;
+    background: $brand20;
+    box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.16), inset 0px 2px 4px rgba(0, 0, 0, 0.16);
+    border-radius: 30px;
+    font-size: 14px;
+    line-height: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__size-options {
+    .modal__option:nth-of-type(3) {
+      width: 153px;
+    }
+  }
+
+  &__type-options {
+    .modal__option {
+      width: 100%;
+    }
+
+    .modal__option:nth-of-type(2) {
+      margin-right: 2px;
+    }
+
+    .modal__option:nth-of-type(1) {
+      margin-left: 2px;
+    }
+  }
+
+  &__option {
+    width: 136px;
+    height: 100%;
+    color: $black80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    span {
+      color: $black50;
+      margin-left: 3px;
+      font-size: 12px;
+    }
+  }
+
+  &__type-options {
+    margin-top: 22px;
+    justify-content: space-between;
+  }
+
+
+  .active-option {
+    background: $white;
+    height: 36px;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.35), 3px 2px 4px rgba(0, 0, 0, 0.20), -3px 2px 4px rgba(0, 0, 0, 0.20);
+    border-radius: 16px;
+  }
+}

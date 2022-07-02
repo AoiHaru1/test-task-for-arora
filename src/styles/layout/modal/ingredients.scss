@@ -1,0 +1,128 @@
+@import "../../abstracts/variables";
+
+.modal {
+  &__text-container {
+    gap: 14px;
+  }
+
+  &__title {
+    font-size: 22px;
+    line-height: 19px;
+    color: $black;
+  }
+
+  &__description {
+    font-size: 14px;
+    line-height: 20px;
+    color: $black60;
+  }
+
+  &__ingredients-container {
+    margin-top: 23px;
+  }
+
+  &__ingredients-title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__ingredients-list {
+    height: 241px;
+    overflow-y: scroll;
+    gap: 16px;
+    margin-top: 14px;
+    scrollbar-color: $white $black60;
+    position: relative;
+    padding: 0 3px;
+    left: -6px;
+
+    &::-webkit-scrollbar {
+      width: 16px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: $black60;
+      box-shadow: inset 0px 0px 15px rgba(0, 0, 0, 0.15);
+      border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: $white;
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 5px rgba(0, 0, 0, 0.35), 0px 6px 16px rgba(0, 0, 0, 0.28);
+      border-radius: 8px;
+      border: 2px solid $black60;
+    }
+  }
+
+  &__btn {
+    margin-top: 24px;
+    max-width: 352px;
+    height: 40px;
+    background: $brand;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.16), 0px 4px 6px rgba(0, 0, 0, 0.16);
+    border-radius: 40px;
+
+    s {
+      color: $black20
+    }
+  }
+}
+
+.ingredient {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.16), 0px 4px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 50px;
+  background-color: $white;
+  align-items: center;
+  padding: 4px 0;
+  justify-content: space-between;
+  max-width: 312px;
+  margin-right: 5px;
+  z-index: 1;
+
+  &__add-item {
+    align-items: center;
+  }
+
+  &__check {
+    width: 24px;
+    height: 24px;
+    margin-left: 8px;
+  }
+
+  &__description {
+    font-size: 12px;
+    line-height: 16px;
+    margin-left: 8px;
+  }
+
+  &__details {
+    width: 126px;
+    align-items: center;
+  }
+
+  &__values {
+    text-align: end;
+    margin-left: 3px;
+  }
+
+  &__price,
+  &__total-count,
+  &__total-price {
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  &__total-count {
+  }
+
+  &__price {
+  }
+
+  &__img {
+    margin-left: 10px;
+  }
+
+  &__total-price {
+    margin-left: 10px;
+  }
+}

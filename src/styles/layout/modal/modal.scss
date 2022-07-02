@@ -1,0 +1,23 @@
+@import "../../abstracts/variables";
+@import "./ingredients.scss";
+@import "./options.scss";
+
+.modal {
+  width: 820px;
+  height: 520px;
+  padding: 40px;
+  z-index: 143;
+  display: block;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid $black60;
+  background-color: $white;
+  border-radius: 15px;
+  box-shadow: -2px -2px 5px rgba(0, 0, 0, 0.45), 2px 2px 5px rgba(0, 0, 0, 0.46);
+
+  &__wrapper {
+    gap: 40px;
+  }
+}
