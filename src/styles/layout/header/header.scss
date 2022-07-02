@@ -1,5 +1,7 @@
 @import "./location.scss";
 @import "./logo.scss";
+@import "./burger.scss";
+@import "./option-list.scss";
 
 .header {
   margin-top: 40px;
@@ -7,5 +9,13 @@
   &__content-container {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (max-width: 660px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (max-width: 660px) {
+    margin-top: 12px;
   }
 }

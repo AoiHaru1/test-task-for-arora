@@ -4,6 +4,24 @@
   &__content-container {
     padding: 40px;
     gap: 40px;
+
+    @media screen and (max-width: 660px) {
+      padding: 0 16px;
+      gap: 32px;
+    }
+  }
+
+  &__score-amount {
+    font-size: 22px;
+    line-height: 32px;
+    color: $black80;
+    margin-top: 1px;
+
+    @media screen and (max-width: 660px) {
+      text-align: end;
+      font-size: 18px;
+      line-height: 24px;
+    }
   }
 
   &__title {
@@ -21,6 +39,14 @@
 
     &:last-of-type {
       margin-top: 20px;
+      @media screen and (max-width: 660px) {
+        margin-top: 16px;
+      }
+    }
+
+    @media screen and (max-width: 660px) {
+      font-size: 12px;
+      line-height: 16px;
     }
   }
 
@@ -40,6 +66,11 @@
       font-weight: 400;
       font-size: 16px;
       color: $black20;
+
+      @media screen and (max-width: 660px) {
+        font-size: 14px;
+        line-height: 20px;
+      }
     }
   }
 
@@ -49,6 +80,12 @@
     align-self: flex-end;
     margin-top: 1px;
     padding: 16px 32px;
+
+    @media screen and (max-width: 660px) {
+      padding: 16px 26px;
+      font-size: 14px;
+      line-height: 20px;
+    }
   }
 
   &__total-price {
@@ -56,10 +93,24 @@
       font-size: 18px;
       line-height: 24px;
       color: $black80;
+
+      @media screen and (max-width: 660px) {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 900;
+      }
     }
 
     s {
       color: $black20;
+
+      @media screen and (max-width: 660px) {
+        color: $black40;
+      }
+    }
+
+    @media screen and (max-width: 660px) {
+      text-align: end;
     }
   }
 
@@ -68,5 +119,15 @@
     height: 64px;
     font-size: 18px;
     line-height: 24px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.2), 0px 1px 5px rgba(0, 0, 0, 0.35), 0px 6px 16px rgba(0, 0, 0, 0.28);
+
+    @media screen and (max-width: 660px) {
+      max-width: 287px;
+      height: 48px;
+      font-size: 14px;
+      line-height: 20px;
+      margin-top: -8px;
+      font-weight: 300;
+    }
   }
 }

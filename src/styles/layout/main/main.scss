@@ -1,13 +1,17 @@
-@import './stepper.scss';
-@import './menu.scss';
-@import './bonus.scss';
-@import './gift.scss';
-@import './reccomendations.scss';
-@import './order-end.scss';
+@import "./stepper.scss";
+@import "./order.scss";
+@import "./bonus.scss";
+@import "./gift.scss";
+@import "./reccomendations.scss";
+@import "./order-end.scss";
 
 .main {
   margin-top: 75px;
   padding: 0.1px;
+
+  @media screen and (max-width: 800px) {
+    margin-top: 34px;
+  }
 
   .content-wrapper {
     margin-top: 39px;
@@ -16,10 +20,11 @@
     @media screen and (max-width: 800px) {
       flex-direction: column;
       align-items: center;
-      gap: 50px;
+      gap: 31px;
+      margin-top: 32px;
     }
   }
-  
+
   .stepper {
     margin-top: 2px;
   }
@@ -31,15 +36,29 @@
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25), 0px 0px 4px rgba(0, 0, 0, 0.16), 0px 4px 6px rgba(0, 0, 0, 0.16);
     border-radius: 8px;
     background-color: $white;
+
+    @media screen and (max-width: 660px) {
+      box-shadow: unset;
+      border-radius: 0px;
+      margin-left: 0px;
+    }
   }
 
   .gifts {
     margin-top: 65px;
+
+    @media screen and (max-width: 660px) {
+      margin-top: 16px;
+    }
   }
 
   .reccomendations {
     overflow-x: hidden;
     margin-top: 65px;
+
+    @media screen and (max-width: 660px) {
+      display: none;
+    }
   }
 
   .line-throught {

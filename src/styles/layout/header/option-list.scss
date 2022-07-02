@@ -1,0 +1,71 @@
+@import "../../abstracts/variables";
+
+.header {
+  &__option-list {
+    gap: 8px;
+    margin-top: 11px;
+    @media  screen and (max-width: 660px) {
+      display: flex !important;
+    }
+  }
+
+  &__call,
+  &__map-mark,
+  &__user {
+    background-color: $black80;
+    position: relative;
+
+    svg {
+      fill: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &__call {
+    width: 57px;
+    height: 40px;
+    border-radius: 0px 25px 25px 0px;
+  }
+
+  &__map-mark {
+    width: 58px;
+    height: 40px;
+    border-radius: 25px;
+  }
+
+  &__user {
+    width: 58px;
+    height: 40px;
+    border-radius: 25px;
+  }
+
+
+  &__order {
+    width: 123px;
+    height: 40px;
+    background: $brand;
+    border-radius: 25px 0px 0px 25px;
+    position: relative;
+
+    svg {
+      fill: white;
+      position: absolute;
+      top: 10px;
+      left: 26px;
+    }
+
+    span {
+      font-family: "Roboto Slab";
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      color: $white;
+      position: absolute;
+      right: 27px;
+      top: 10px;
+    }
+  }
+}

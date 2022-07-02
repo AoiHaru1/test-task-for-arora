@@ -20,7 +20,7 @@
     }
 
     @media screen and (max-width: 660px) {
-      gap: 30px;
+      gap: 27px 31px;
     }
   }
 
@@ -38,6 +38,7 @@
       font-size: 10px;
       line-height: 12px;
       text-align: left;
+      margin-top: 1px;
     }
   }
 }
