@@ -3,11 +3,25 @@
 .footer {
   &__additional {
     gap: 30px;
+
+    @media screen and (max-width: 660px) {
+      margin-top: 32px;
+      gap: 28px;
+      padding-bottom: 5px;
+    }
   }
 
   &__app-list {
     gap: 15px;
     align-items: center;
+
+    @media screen and (max-width: 800px) {
+      flex-wrap: wrap;
+    }
+
+    @media screen and (max-width: 660px) {
+      gap: 30px;
+    }
   }
 
   &__info {
@@ -18,6 +32,12 @@
 
     a {
       color: $brand;
+    }
+
+    @media screen and (max-width: 660px) {
+      font-size: 10px;
+      line-height: 12px;
+      text-align: left;
     }
   }
 }

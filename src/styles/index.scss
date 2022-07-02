@@ -8,6 +8,10 @@
 .wrapper {
   max-width: 1312px;
   margin: 0 auto;
+
+  @media screen and (max-width: 660px) {
+    max-width: 320px;
+  }
 }
 
 .flex-column {
@@ -83,4 +87,9 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+
+.main, .header {
+  display: none !important;
 }

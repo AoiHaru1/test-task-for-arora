@@ -4,6 +4,12 @@
   &__link-section {
     gap: 40px;
     flex-basis: 640px;
+
+    @media screen and (max-width: 660px) {
+      flex-wrap: wrap;
+      flex-basis: unset;
+      gap: 32px 27px;
+    }
   }
 
   &__link-list {
@@ -12,5 +18,13 @@
     font-size: 14px;
     line-height: 20px;
     color: rgb(217, 217, 217);
+
+    @media screen and (max-width: 660px) {
+      flex-wrap: wrap;
+      flex-basis: 125px;
+      font-size: 12px;
+      line-height: 16px;
+      gap: 16px;
+    }
   }
 }
