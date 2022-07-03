@@ -8,6 +8,7 @@
       margin-top: 32px;
       gap: 28px;
       padding-bottom: 5px;
+      align-items: center;
     }
   }
 
@@ -17,17 +18,24 @@
 
     @media screen and (max-width: 800px) {
       flex-wrap: wrap;
+      align-items: center;
     }
 
     @media screen and (max-width: 660px) {
       gap: 27px 31px;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 518px) {
+      gap: 27px 31px;
+      justify-content: flex-start;
     }
   }
 
   &__info {
     font-size: 12px;
     line-height: 16px;
-    color: rgb(217, 217, 217);
+    color: $footer-text;
     text-align: end;
 
     a {

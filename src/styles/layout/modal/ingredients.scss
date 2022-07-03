@@ -24,16 +24,18 @@
   &__ingredients-title {
     font-size: 14px;
     line-height: 20px;
+    letter-spacing: -0.2px;
   }
 
   &__ingredients-list {
-    height: 241px;
+    height: 238px;
     overflow-y: scroll;
+    min-width: 352px;
     gap: 16px;
-    margin-top: 14px;
+    margin-top: 12px;
     scrollbar-color: $white $black60;
     position: relative;
-    padding: 0 3px;
+    padding: 3px 3px;
     left: -6px;
 
     &::-webkit-scrollbar {
@@ -76,7 +78,7 @@
   padding: 4px 0;
   justify-content: space-between;
   max-width: 312px;
-  margin-right: 5px;
+  margin-right: 0px;
   z-index: 1;
 
   &__add-item {
@@ -110,12 +112,6 @@
   &__total-price {
     font-size: 12px;
     line-height: 16px;
-  }
-
-  &__total-count {
-  }
-
-  &__price {
   }
 
   &__img {

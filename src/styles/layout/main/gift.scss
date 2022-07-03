@@ -1,6 +1,12 @@
 @import "../../abstracts/variables";
 
 .gifts {
+  grid-column: 1/2;
+
+  @media screen and (max-width: 660px) {
+    grid-row: 2;
+  }
+
   &__heading {
     font-size: 30px;
     line-height: 44px;
@@ -58,7 +64,7 @@
     @media screen and (max-width: 660px) {
       position: absolute;
       top: 5px;
-      left: 16px;
+      left: 17px;
       color: $white;
       font-size: 12px;
       line-height: 16px;
@@ -78,10 +84,20 @@
   &__remove-btn {
     width: 24px;
     height: 24px;
-    fill: #999999;
+    fill: $black40;
     position: absolute;
-    top: 22px;
-    right: 8px;
+    top: 20px;
+    right: 16px;
+
+    &:hover {
+      fill: $black80;
+    }
+
+    @media screen and (max-width: 660px) {
+      top: 18px;
+      right: 12px;
+      transform: scale(68%);
+    }
   }
 
   &__new {

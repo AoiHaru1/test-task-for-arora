@@ -6,6 +6,8 @@
     margin-top: 11px;
     @media  screen and (max-width: 660px) {
       display: flex !important;
+      width: 100%;
+      justify-content: space-around !important;
     }
   }
 
@@ -21,6 +23,13 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      transition: fill 0.2s ease-in;
+    }
+
+    &:hover {
+      svg {
+        fill: #da5922;
+      }
     }
   }
 

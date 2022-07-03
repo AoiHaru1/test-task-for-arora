@@ -1,0 +1,35 @@
+.popup {
+  position: fixed;
+  width: 320px;
+  background-color: $white;
+  height: 120%;
+  right: -650px;
+  z-index: 21;
+  top: 0px;
+  transition: right 0.3s ease-in;
+
+  &__list {
+    margin-top: 100px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  &__item {
+    font-size: 28px;
+    color: $black60;
+    text-align: center;
+
+    &:hover a {
+      color: $black;
+    }
+  }
+
+  &__title-block {
+    width: 240px;
+    margin-top: 30px;
+  }
+}
+
+.popup-right {
+  right: 0px !important;
+}

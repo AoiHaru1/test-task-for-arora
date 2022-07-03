@@ -1,6 +1,16 @@
 @import "../../abstracts/variables";
 
 .bonus {
+  grid-column: 2/2;
+  grid-row: 1;
+
+  @media screen and (max-width: 890px) {
+    grid-column: 1/2;
+    grid-row: 3;
+    justify-self: center;
+    margin-top: 30px;
+  }
+
   &__content-container {
     padding: 40px;
     gap: 40px;
@@ -8,6 +18,8 @@
     @media screen and (max-width: 660px) {
       padding: 0 16px;
       gap: 32px;
+      grid-row: 3;
+      margin-top: 1px;
     }
   }
 

@@ -7,31 +7,49 @@
     color: $black80;
   }
 
-  &__item-list {
+  &__card-list {
     margin-top: 39px;
-    gap: 16px;
   }
 
-  &__item {
+  &__content-container {
     position: relative;
-    background-color: $black10;
-    gap: 16px;
-    padding-bottom: 16px;
-    height: 100%;
-    border-radius: 8px;
+    min-height: 525;
+    overflow: hidden;
+    cursor: grab;
   }
+
+  &__card-list {
+    position: absolute;
+    display: flex;
+    gap: 16px;
+    pointer-events: none;
+  }
+}
+
+.card {
+  max-width: 298px;
+  height: 100%;
+  background-color: $black10;
+  gap: 16px;
+  padding-bottom: 16px;
+  border-radius: 8px;
+  z-index: 10;
 
   &__img {
     border-radius: 8px 8px 0 0;
   }
 
   &__title {
+    font-family: "Roboto Slab";
+    font-weight: 700;
     font-size: 18px;
     line-height: 24px;
     margin: 0 16px 0 16px;
   }
 
   &__description {
+    font-family: "Roboto Slab";
+    font-weight: 400;
     font-size: 14px;
     line-height: 20px;
     margin: 0 16px 0 16px;
@@ -48,6 +66,7 @@
     font-family: "Roboto Slab";
     font-weight: 700;
     white-space: nowrap;
+    pointer-events: all;
   }
 
   &__btn.btn-light {

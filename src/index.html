@@ -203,8 +203,23 @@
     <div class="wrapper">
       <div class="header__content-container">
         <div class="header__logo">
-          <img src="./assets/images/header/header-logo.png" alt="Vivat Pizza">
+          <a href="#!"><img src="./assets/images/header/header-logo.png" alt="Vivat Pizza"></a>
         </div>
+
+        <div class="popup">
+          <div class="popup__title-block">
+            <a href="#!">
+              <img src="./assets/images/header/header-logo.png" alt="Vivat Pizza">
+            </a>
+          </div>
+          <ul class="popup__list flex-column roboto-slab-bold">
+            <li class="popup__item active"><a href="#">Основная страница</a></li>
+            <li class="popup__item"><a href="">Наше меню</a></li>
+            <li class="popup__item"><a href="">Корзина</a></li>
+            <li class="popup__item"><a href="">Контакты</a></li>
+          </ul>
+        </div>
+
         <div class="hamburger-lines mobile">
           <span class="line line1"></span>
           <span class="line line2"></span>
@@ -234,7 +249,7 @@
             </svg>
           </button>
           <button class="header__order">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M0 1.875C0 1.18464 0.559644 0.625 1.25 0.625H3C4.66463 0.625 5.5734 1.68641 5.99782 2.55991C6.08578 2.74093 6.15677 2.91934 6.21412 3.08738H18.75C19.1094 3.08738 19.4515 3.2421 19.6888 3.51204C19.9261 3.78198 20.0357 4.14101 19.9897 4.49748L19.0564 11.7247C18.9759 12.348 18.4451 12.8146 17.8167 12.8146H6.15C6.13986 12.8146 6.13264 12.8152 6.12785 12.8158C6.12424 12.8195 6.11896 12.8255 6.11226 12.8348C6.06419 12.9011 6 13.0586 6 13.2823C6 13.506 6.06419 13.6635 6.11226 13.7299C6.11896 13.7391 6.12425 13.7452 6.12785 13.7489C6.13265 13.7495 6.13986 13.75 6.15 13.75H17.6667C18.357 13.75 18.9167 14.3096 18.9167 15C18.9167 15.6904 18.357 16.25 17.6667 16.25H6.15C5.24462 16.25 4.53297 15.8111 4.08774 15.1966C3.66915 14.6188 3.5 13.9174 3.5 13.2823C3.5 12.6472 3.66915 11.9458 4.08774 11.368C4.27526 11.1092 4.51004 10.8816 4.78664 10.7047C4.63028 9.4359 4.45493 8.08305 4.30738 6.96454C4.21368 6.25418 4.13134 5.63944 4.07244 5.20236C4.04299 4.98383 4.01941 4.80976 4.00319 4.69039L3.97819 4.50673C3.97495 4.48303 3.97239 4.45921 3.97051 4.43537L3.97029 4.43309C3.9697 4.42712 3.96827 4.41359 3.96566 4.39363C3.96039 4.35335 3.95061 4.28904 3.93385 4.20914C3.89918 4.04373 3.84071 3.8408 3.7492 3.65247C3.57541 3.29479 3.37585 3.125 3 3.125H1.25C0.559644 3.125 0 2.56536 0 1.875ZM6.6465 5.58738C6.68846 5.90152 6.73555 6.2558 6.78591 6.6376C6.93052 7.73383 7.10244 9.0596 7.25747 10.3146H16.7177L17.3282 5.58738H6.6465ZM6.13339 12.8107L6.13254 12.8113L6.13339 12.8107Z" />
               <circle cx="16.5625" cy="18.4375" r="1.5625" />
@@ -300,114 +315,22 @@
             </span>
           </div>
         </div>
-        <div class="content-wrapper flex-row">
-          <div class="order mobile">
+        <div class="content-wrapper">
+          <div class="order flex-row">
             <div class="order__container">
               <ul class="order__item-list flex-column">
                 <li class="order__item flex-row">
-                  <img src="./assets/images/order/order-mobile-item-1.png" alt="Cheeseburger BBQ" class="order__img">
-                  <h4 class="order__title roboto-slab-bold">Чизбургер барбекю</h4>
-                  <div class="price flex-row">
-                    <div class="price__counter flex-row roboto-slab-medium">
-                      <button class="price__decreament"></button>
-                      <span class="price__total-count">2</span>
-                      <button class="price__increament"></button>
-                    </div>
-                    <div class="price__total roboto-slab-bold flex-column">
-                      <span class="price__outdated price__outdated-mg-fix">5060</span>
-                      4444 ₽
-                    </div>
-                  </div>
-                </li>
-                <li class="order__item flex-row">
-                  <img src="./assets/images/order/order-mobile-item-2.png" alt="Supreme" class="order__img">
-                  <h4 class="order__title roboto-slab-bold">Суприм</h4>
-                  <div class="price flex-row">
-                    <div class="price__counter flex-row roboto-slab-medium">
-                      <button class="price__decreament"></button>
-                      <span class="price__total-count">1</span>
-                      <button class="price__increament"></button>
-                    </div>
-                    <div class="price__total roboto-slab-bold">690 ₽</div>
-                  </div>
-                </li>
-                <li class="order__item flex-row">
-                  <img src="./assets/images/order/order-mobile-item-3.png" alt="Burger 'Two cheeses'"
-                    class="order__img">
-                  <h4 class="order__title roboto-slab-bold">Бургер «Два сыра»</h4>
-                  <div class="price flex-row">
-                    <div class="price__counter flex-row roboto-slab-medium">
-                      <button class="price__decreament"></button>
-                      <span class="price__total-count">3</span>
-                      <button class="price__increament"></button>
-                    </div>
-                    <div class="price__total roboto-slab-bold">540 ₽</div>
-                  </div>
-                </li>
-                <li class="order__item flex-row">
-                  <img src="./assets/images/order/order-mobile-item-4.png" alt="Sushi Unagi" class="order__img">
-                  <h4 class="order__title roboto-slab-bold">Суши Унаги</h4>
-                  <div class="price flex-row">
-                    <div class="price__counter flex-row roboto-slab-medium">
-                      <button class="price__decreament"></button>
-                      <span class="price__total-count">10</span>
-                      <button class="price__increament"></button>
-                    </div>
-                    <div class="price__total roboto-slab-bold">1200 ₽</div>
-                  </div>
-                </li>
-                <li class="order__item flex-row">
-                  <img src="./assets/images/order/order-mobile-item-5.png" alt="Ume" class="order__img">
-                  <h4 class="order__title roboto-slab-bold">Умэ</h4>
-                  <div class="price flex-row">
-                    <div class="price__counter flex-row roboto-slab-medium">
-                      <button class="price__decreament"></button>
-                      <span class="price__total-count">2</span>
-                      <button class="price__increament"></button>
-                    </div>
-                    <div class="price__total roboto-slab-bold">
-                      770 ₽
-                    </div>
-                  </div>
-                </li>
-              </ul>
-
-              <div class="gifts mobile">
-                <div class="gifts__container">
-                  <h4 class="gifts__heading roboto-slab-bold">Подарки</h4>
-                  <ul class="gifts__item-list flex-column">
-                    <li class="gifts__item flex-row">
-                      <img src="./assets/images/order/order-mobile-gift-item-1.png" alt="Cheeseburger BBQ"
-                        class="gifts__img">
-                      <h4 class="gifts__title roboto-slab-bold">Морс "Смородина"</h4>
-                      <button class="gifts__remove-btn">
-                        <svg width="24" height="24" viewBox="0 0 36 36" xmlns="http://www.w3.org/2000/svg">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3ZM12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0Z" />
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M9.31066 7.18934C8.72487 6.60355 7.77513 6.60355 7.18934 7.18934C6.60355 7.77513 6.60355 8.72487 7.18934 9.31066L9.87868 12L7.18934 14.6893C6.60355 15.2751 6.60355 16.2249 7.18934 16.8107C7.77513 17.3964 8.72487 17.3964 9.31066 16.8107L12 14.1213L14.6893 16.8107C15.2751 17.3964 16.2249 17.3964 16.8107 16.8107C17.3964 16.2249 17.3964 15.2751 16.8107 14.6893L14.1213 12L16.8107 9.31066C17.3964 8.72487 17.3964 7.77513 16.8107 7.18934C16.2249 6.60355 15.2751 6.60355 14.6893 7.18934L12 9.87868L9.31066 7.18934Z" />
-                        </svg>
-                      </button>
-                    </li>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-
-          <div class="order flex-row desktop">
-            <div class="order__container">
-              <ul class="order__item-list flex-column">
-                <li class="order__item flex-row">
-                  <img src="./assets/images/order/order-item-1.png" alt="Cheeseburger BBQ" class="order__img">
+                  <img src="./assets/images/order/order-item-1.png" alt="Cheeseburger BBQ" class="order__img  desktop">
+                  <img src="./assets/images/order/order-mobile-item-1.png" alt="Cheeseburger BBQ"
+                    class="order__img  mobile">
                   <div class="order__text-container">
                     <h4 class="order__title roboto-slab-bold">Чизбургер барбекю</h4>
-                    <span class="order__description roboto-slab-regular">Соус коктейль, фарш из отборной говядины,
+                    <span class="order__description roboto-slab-regular desktop">Соус коктейль, фарш из отборной
+                      говядины,
                       маринованные огурцы, спелые
                       томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук</span>
                     <div class="price flex-row">
-                      <div class="price__initial roboto-slab-bold">
+                      <div class="price__initial roboto-slab-bold desktop">
                         <span class="price__outdated price__outdated-mg-fix">930</span>
                         8888 ₽
                       </div>
@@ -416,13 +339,17 @@
                         <span class="price__total-count">2</span>
                         <button class="price__increament"></button>
                       </div>
-                      <div class="price__total roboto-slab-bold">
+                      <div class="price__total roboto-slab-bold desktop">
                         <span class="price__outdated price__outdated-mg-fix">1860</span>
                         8888 ₽
                       </div>
+                      <div class="price__total roboto-slab-bold mobile">
+                        <span class="price__outdated price__outdated-mg-fix">5060</span>
+                        4444 ₽
+                      </div>
                     </div>
                   </div>
-                  <button class="order__remove-btn">
+                  <button class="order__remove-btn desktop">
                     <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3ZM12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0Z" />
@@ -432,15 +359,16 @@
                   </button>
                 </li>
                 <li class="order__item flex-row">
-                  <img src="./assets/images/order/order-item-2.png" alt="Supreme" class="order__img">
+                  <img src="./assets/images/order/order-item-2.png" alt="Supreme" class="order__img  desktop">
+                  <img src="./assets/images/order/order-mobile-item-2.png" alt="Supreme" class="order__img  mobile">
                   <div class="order__text-container">
                     <h4 class="order__title roboto-slab-bold">Суприм</h4>
-                    <span class="order__description roboto-slab-regular">Соус томатный, сыр моцарелла, колбаса
+                    <span class="order__description roboto-slab-regular desktop">Соус томатный, сыр моцарелла, колбаса
                       пепперони,
                       ветчина, лук, сладкий
                       перец, грибной микс, свинина, говядина, оливки черные</span>
                     <div class="price flex-row">
-                      <div class="price__initial roboto-slab-bold">690 ₽</div>
+                      <div class="price__initial roboto-slab-bold desktop">690 ₽</div>
                       <div class="price__counter flex-row roboto-slab-medium">
                         <button class="price__decreament"></button>
                         <span class="price__total-count">1</span>
@@ -449,7 +377,7 @@
                       <div class="price__total roboto-slab-bold">690 ₽</div>
                     </div>
                   </div>
-                  <button class="order__remove-btn">
+                  <button class="order__remove-btn desktop">
                     <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3ZM12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0Z" />
@@ -457,20 +385,24 @@
                         d="M9.31066 7.18934C8.72487 6.60355 7.77513 6.60355 7.18934 7.18934C6.60355 7.77513 6.60355 8.72487 7.18934 9.31066L9.87868 12L7.18934 14.6893C6.60355 15.2751 6.60355 16.2249 7.18934 16.8107C7.77513 17.3964 8.72487 17.3964 9.31066 16.8107L12 14.1213L14.6893 16.8107C15.2751 17.3964 16.2249 17.3964 16.8107 16.8107C17.3964 16.2249 17.3964 15.2751 16.8107 14.6893L14.1213 12L16.8107 9.31066C17.3964 8.72487 17.3964 7.77513 16.8107 7.18934C16.2249 6.60355 15.2751 6.60355 14.6893 7.18934L12 9.87868L9.31066 7.18934Z" />
                     </svg>
                   </button>
-                  <img src="./assets/images/shared/new-tag.png" alt="" class="order__new">
+                  <img src="./assets/images/shared/new-tag.png" alt="" class="order__new desktop">
                 </li>
                 <li class="order__item flex-row">
-                  <img src="./assets/images/order/order-item-3.png" alt="Burger 'Two cheeses'" class="order__img">
+                  <img src="./assets/images/order/order-item-3.png" alt="Burger 'Two cheeses'"
+                    class="order__img  desktop">
+                  <img src="./assets/images/order/order-mobile-item-3.png" alt="Burger 'Two cheeses'"
+                    class="order__img mobile">
                   <div class="order__text-container">
                     <h4 class="order__title roboto-slab-bold">Бургер «Два сыра»</h4>
-                    <span class="order__description roboto-slab-regular">Ароматная котлета из мраморной говядины с
+                    <span class="order__description roboto-slab-regular desktop">Ароматная котлета из мраморной говядины
+                      с
                       сыром
                       чеддер и моцарелла,<br>
                       хрустящим луком, маринованными корнишонами, свежими томатами, соусом коктейль и барбекю в
                       мягкой
                       пшеничной булочке. Картофель и соус приобретается отдельно</span>
                     <div class="price flex-row">
-                      <div class="price__initial roboto-slab-bold">180 ₽</div>
+                      <div class="price__initial roboto-slab-bold desktop">180 ₽</div>
                       <div class="price__counter flex-row roboto-slab-medium">
                         <button class="price__decreament"></button>
                         <span class="price__total-count">3</span>
@@ -479,7 +411,7 @@
                       <div class="price__total roboto-slab-bold">540 ₽</div>
                     </div>
                   </div>
-                  <button class="order__remove-btn">
+                  <button class="order__remove-btn desktop">
                     <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3ZM12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0Z" />
@@ -487,15 +419,16 @@
                         d="M9.31066 7.18934C8.72487 6.60355 7.77513 6.60355 7.18934 7.18934C6.60355 7.77513 6.60355 8.72487 7.18934 9.31066L9.87868 12L7.18934 14.6893C6.60355 15.2751 6.60355 16.2249 7.18934 16.8107C7.77513 17.3964 8.72487 17.3964 9.31066 16.8107L12 14.1213L14.6893 16.8107C15.2751 17.3964 16.2249 17.3964 16.8107 16.8107C17.3964 16.2249 17.3964 15.2751 16.8107 14.6893L14.1213 12L16.8107 9.31066C17.3964 8.72487 17.3964 7.77513 16.8107 7.18934C16.2249 6.60355 15.2751 6.60355 14.6893 7.18934L12 9.87868L9.31066 7.18934Z" />
                     </svg>
                   </button>
-                  <img src="./assets/images/shared/new-tag.png" alt="" class="order__new">
+                  <img src="./assets/images/shared/new-tag.png" alt="" class="order__new desktop">
                 </li>
                 <li class="order__item flex-row">
-                  <img src="./assets/images/order/order-item-4.png" alt="Sushi Unagi" class="order__img">
+                  <img src="./assets/images/order/order-item-4.png" alt="Sushi Unagi" class="order__img desktop">
+                  <img src="./assets/images/order/order-mobile-item-4.png" alt="Sushi Unagi" class="order__img mobile">
                   <div class="order__text-container">
                     <h4 class="order__title roboto-slab-bold">Суши Унаги</h4>
-                    <span class="order__description roboto-slab-regular">Угорь</span>
+                    <span class="order__description roboto-slab-regular desktop">Угорь</span>
                     <div class="price flex-row">
-                      <div class="price__initial roboto-slab-bold">120 ₽</div>
+                      <div class="price__initial roboto-slab-bold desktop">120 ₽</div>
                       <div class="price__counter flex-row roboto-slab-medium">
                         <button class="price__decreament"></button>
                         <span class="price__total-count">10</span>
@@ -504,7 +437,7 @@
                       <div class="price__total roboto-slab-bold">1200 ₽</div>
                     </div>
                   </div>
-                  <button class="order__remove-btn">
+                  <button class="order__remove-btn desktop">
                     <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3ZM12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0Z" />
@@ -512,17 +445,18 @@
                         d="M9.31066 7.18934C8.72487 6.60355 7.77513 6.60355 7.18934 7.18934C6.60355 7.77513 6.60355 8.72487 7.18934 9.31066L9.87868 12L7.18934 14.6893C6.60355 15.2751 6.60355 16.2249 7.18934 16.8107C7.77513 17.3964 8.72487 17.3964 9.31066 16.8107L12 14.1213L14.6893 16.8107C15.2751 17.3964 16.2249 17.3964 16.8107 16.8107C17.3964 16.2249 17.3964 15.2751 16.8107 14.6893L14.1213 12L16.8107 9.31066C17.3964 8.72487 17.3964 7.77513 16.8107 7.18934C16.2249 6.60355 15.2751 6.60355 14.6893 7.18934L12 9.87868L9.31066 7.18934Z" />
                     </svg>
                   </button>
-                  <img src="./assets/images/shared/new-tag.png" alt="" class="order__new">
+                  <img src="./assets/images/shared/new-tag.png" alt="" class="order__new desktop">
                 </li>
                 <li class="order__item flex-row">
-                  <img src="./assets/images/order/order-item-5.png" alt="Ume" class="order__img">
+                  <img src="./assets/images/order/order-item-5.png" alt="Ume" class="order__img desktop">
+                  <img src="./assets/images/order/order-mobile-item-5.png" alt="Ume" class="order__img mobile">
                   <div class="order__text-container">
                     <h4 class="order__title roboto-slab-bold">Умэ</h4>
-                    <span class="order__description roboto-slab-regular">Лосось, угорь, сыр «Филадельфия»,
+                    <span class="order__description roboto-slab-regular desktop">Лосось, угорь, сыр «Филадельфия»,
                       авокадо</span>
                     <div class="price flex-row">
-                      <div class="price__initial roboto-slab-bold">
-                        <span class="price__outdated">420</span>
+                      <div class="price__initial roboto-slab-bold desktop">
+                        <span class="price__outdated ">420</span>
                         385 ₽
                       </div>
                       <div class="price__counter flex-row roboto-slab-medium">
@@ -531,12 +465,12 @@
                         <button class="price__increament"></button>
                       </div>
                       <div class="price__total roboto-slab-bold">
-                        <span class="price__outdated">840</span>
+                        <span class="price__outdated desktop">840</span>
                         770 ₽
                       </div>
                     </div>
                   </div>
-                  <button class="order__remove-btn">
+                  <button class="order__remove-btn desktop">
                     <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                       <path fill-rule="evenodd" clip-rule="evenodd"
                         d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3ZM12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0Z" />
@@ -544,7 +478,7 @@
                         d="M9.31066 7.18934C8.72487 6.60355 7.77513 6.60355 7.18934 7.18934C6.60355 7.77513 6.60355 8.72487 7.18934 9.31066L9.87868 12L7.18934 14.6893C6.60355 15.2751 6.60355 16.2249 7.18934 16.8107C7.77513 17.3964 8.72487 17.3964 9.31066 16.8107L12 14.1213L14.6893 16.8107C15.2751 17.3964 16.2249 17.3964 16.8107 16.8107C17.3964 16.2249 17.3964 15.2751 16.8107 14.6893L14.1213 12L16.8107 9.31066C17.3964 8.72487 17.3964 7.77513 16.8107 7.18934C16.2249 6.60355 15.2751 6.60355 14.6893 7.18934L12 9.87868L9.31066 7.18934Z" />
                     </svg>
                   </button>
-                  <img src="./assets/images/shared/new-tag.png" alt="new" class="order__new">
+                  <img src="./assets/images/shared/new-tag.png" alt="new" class="order__new desktop">
                 </li>
               </ul>
             </div>
@@ -573,87 +507,132 @@
               </button>
             </div>
           </div>
-        </div>
-        <div class="gifts desktop">
-          <div class="gifts__content-container">
-            <h2 class="gifts__heading roboto-slab-bold">Подарки</h2>
-            <ul class="gifts__item-list flex-column">
-              <li class="gifts__item flex-row">
-                <img src="./assets/images/gifts/gift-item-1.png" alt="Morse 'Currant'" class="order__img">
-                <div class="gifts__text-container">
-                  <h4 class="gifts__title roboto-slab-bold">Морс "Смородина"</h4>
-                  <span class="gifts__description roboto-slab-regular">Морс "Смородина", 1 л</span>
-                </div>
-                <button class="gifts__remove-btn">
-                  <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3ZM12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0Z" />
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                      d="M9.31066 7.18934C8.72487 6.60355 7.77513 6.60355 7.18934 7.18934C6.60355 7.77513 6.60355 8.72487 7.18934 9.31066L9.87868 12L7.18934 14.6893C6.60355 15.2751 6.60355 16.2249 7.18934 16.8107C7.77513 17.3964 8.72487 17.3964 9.31066 16.8107L12 14.1213L14.6893 16.8107C15.2751 17.3964 16.2249 17.3964 16.8107 16.8107C17.3964 16.2249 17.3964 15.2751 16.8107 14.6893L14.1213 12L16.8107 9.31066C17.3964 8.72487 17.3964 7.77513 16.8107 7.18934C16.2249 6.60355 15.2751 6.60355 14.6893 7.18934L12 9.87868L9.31066 7.18934Z" />
-                  </svg>
-                </button>
-                <img src="./assets/images/gifts/gift-tag.png" alt="gift" class="gifts__new">
-              </li>
-            </ul>
+          <div class="gifts">
+            <div class="gifts__content-container">
+              <h2 class="gifts__heading roboto-slab-bold">Подарки</h2>
+              <ul class="gifts__item-list flex-column">
+                <li class="gifts__item flex-row">
+                  <img src="./assets/images/gifts/gift-item-1.png" alt="Morse 'Currant'" class="order__img desktop">
+                  <img src="./assets/images/gifts/mobile-gift-item-1.png" alt="Morse 'Currant'"
+                    class="order__img mobile">
+                  <div class="gifts__text-container">
+                    <h4 class="gifts__title roboto-slab-bold">Морс "Смородина"</h4>
+                    <span class="gifts__description roboto-slab-regular desktop">Морс "Смородина", 1 л</span>
+                  </div>
+                  <button class="gifts__remove-btn">
+                    <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M12 3C16.9706 3 21 7.02944 21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3ZM12 0C18.6274 0 24 5.37258 24 12C24 18.6274 18.6274 24 12 24C5.37258 24 0 18.6274 0 12C0 5.37258 5.37258 0 12 0Z" />
+                      <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M9.31066 7.18934C8.72487 6.60355 7.77513 6.60355 7.18934 7.18934C6.60355 7.77513 6.60355 8.72487 7.18934 9.31066L9.87868 12L7.18934 14.6893C6.60355 15.2751 6.60355 16.2249 7.18934 16.8107C7.77513 17.3964 8.72487 17.3964 9.31066 16.8107L12 14.1213L14.6893 16.8107C15.2751 17.3964 16.2249 17.3964 16.8107 16.8107C17.3964 16.2249 17.3964 15.2751 16.8107 14.6893L14.1213 12L16.8107 9.31066C17.3964 8.72487 17.3964 7.77513 16.8107 7.18934C16.2249 6.60355 15.2751 6.60355 14.6893 7.18934L12 9.87868L9.31066 7.18934Z" />
+                    </svg>
+                  </button>
+                  <img src="./assets/images/gifts/gift-tag.png" alt="gift" class="gifts__new desktop">
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
         <div class="reccomendations">
+          <h3 class="reccomendations__heading roboto-slab-bold">Рекомендуем</h3>
+
           <div class="reccomendations__content-container">
-            <h2 class="reccomendations__heading roboto-slab-bold">Рекомендуем</h2>
-            <ul class="reccomendations__item-list flex-row">
-              <li class="reccomendations__item flex-column">
-                <img src="./assets/images/reccomendations/reccomendations-item-1.png" alt="Cheeseburger BBQ"
-                  class="reccomendations__img">
-                <h4 class="reccomendations__title roboto-slab-bold">Чизбургер барбекю</h4>
-                <p class="reccomendations__description roboto-slab-regular">Соус коктейль, фарш из отборной
-                  говядины,
-                  маринованные огурцы,
-                  спелые томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук</p>
-                <button class="reccomendations__btn btn-light">от 287 ₽</button>
+            <ul class="reccomendations__card-list flex-row">
+              <li class="card flex-column">
+                <img class="card__img" src="./assets/images/reccomendations/reccomendations-item-1.png"
+                  alt="Cheeseburger BBQ" />
+                <h4 class="card__title">Чизбургер барбекю</h4>
+                <span class="card__description">
+                  Соус коктейль, фарш из отборной говядины, маринованные огурцы, спелые томаты, сыр моцарелла, сыр
+                  чеддер, соус барбекю, хрустящий лук
+                </span>
+                <button class="card__btn btn-light">от 287 ₽</button>
               </li>
-              <li class="reccomendations__item flex-column">
-                <img src="./assets/images/reccomendations/reccomendations-item-2.png" alt="Burger 'Two cheeses'"
-                  class="reccomendations__img">
-                <h4 class="reccomendations__title roboto-slab-bold">Бургер «Два сыра»</h4>
-                <p class="reccomendations__description roboto-slab-regular">Ароматная котлета из мраморной говядины
-                  с
-                  сыром чеддер и
-                  моцарелла, хрустящим луком, маринованными корнишонами, свежими томатами, соусом коктейль и барбекю
-                  в
-                  мягкой пшеничной булочке. Картофель и соус приобретается отдельно</p>
-                <button class="reccomendations__btn btn">387 ₽</button>
-                <img class="reccomendations__tag" src="./assets/images/shared/new-tag.png" alt="new">
+              <li class="card flex-column">
+                <img class="card__img" src="./assets/images/reccomendations/reccomendations-item-2.png"
+                  alt="Burger 'Two cheeses'" />
+                <h4 class="card__title">Бургер «Два сыра»</h4>
+                <span class="card__description">
+                  Ароматная котлета из мраморной говядины с сыром чеддер и моцарелла, хрустящим луком, маринованными
+                  корнишонами, свежими томатами, соусом коктейль и барбекю в мягкой пшеничной булочке. Картофель и
+                  соус приобретается отдельно
+                </span>
+                <button class="card__btn btn">387 ₽</button>
+                <img src="./assets/images/shared/new-tag.png" alt="new" class="card__tag">
               </li>
-              <li class="reccomendations__item flex-column">
-                <img src="./assets/images/reccomendations/reccomendations-item-3.png" alt="Sushi Ebi"
-                  class="reccomendations__img">
-                <h4 class="reccomendations__title roboto-slab-bold">Суши Эби</h4>
-                <p class="reccomendations__description roboto-slab-regular">Креветка</p>
-                <button class="reccomendations__btn btn">130 ₽</button>
-                <img class="reccomendations__tag" src="./assets/images/shared/new-tag.png" alt="new">
+              <li class="card flex-column">
+                <img class="card__img" src="./assets/images/reccomendations/reccomendations-item-3.png"
+                  alt="Sushi Ebi" />
+                <h4 class="card__title">Суши Эби</h4>
+                <span class="card__description">
+                  Креветка
+                </span>
+                <button class="card__btn btn">130 ₽</button>
+                <img src="./assets/images/shared/new-tag.png" alt="new" class="card__tag">
               </li>
-              <li class="reccomendations__item flex-column">
-                <img src="./assets/images/reccomendations/reccomendations-item-1.png" alt="Cheeseburger BBQ"
-                  class="reccomendations__img">
-                <h4 class="reccomendations__title roboto-slab-bold">Чизбургер барбекю</h4>
-                <p class="reccomendations__description roboto-slab-regular">Соус коктейль, фарш из отборной
-                  говядины,
-                  маринованные огурцы,
-                  спелые томаты, сыр моцарелла, сыр чеддер, соус барбекю, хрустящий лук</p>
-                <button class="reccomendations__btn btn-light">от 287 ₽</button>
+              <li class="card flex-column">
+                <img class="card__img" src="./assets/images/reccomendations/reccomendations-item-1.png"
+                  alt="Cheeseburger BBQ" />
+                <h4 class="card__title">Чизбургер барбекю</h4>
+                <span class="card__description">
+                  Соус коктейль, фарш из отборной говядины, маринованные огурцы, спелые томаты, сыр моцарелла, сыр
+                  чеддер, соус барбекю, хрустящий лук
+                </span>
+                <button class="card__btn btn-light">от 287 ₽</button>
               </li>
-              <li class="reccomendations__item flex-column">
-                <img src="./assets/images/reccomendations/reccomendations-item-2.png" alt="Burger 'Two cheeses'"
-                  class="reccomendations__img">
-                <h4 class="reccomendations__title roboto-slab-bold">Бургер «Два сыра»</h4>
-                <p class="reccomendations__description roboto-slab-regular">Ароматная котлета из мраморной говядины
-                  с
-                  сыром чеддер и
-                  моцарелла, хрустящим луком, маринованными корнишонами, свежими томатами, соусом коктейль и барбекю
-                  в
-                  мягкой пшеничной булочке. Картофель и соус приобретается отдельно</p>
-                <button class="reccomendations__btn btn">387 ₽</button>
-                <img class="reccomendations__tag" src="./assets/images/shared/new-tag.png" alt="new">
+              <li class="card flex-column">
+                <img class="card__img" src="./assets/images/reccomendations/reccomendations-item-2.png"
+                  alt="Burger 'Two cheeses'" />
+                <h4 class="card__title">Бургер «Два сыра»</h4>
+                <span class="card__description">
+                  Ароматная котлета из мраморной говядины с сыром чеддер и моцарелла, хрустящим луком, маринованными
+                  корнишонами, свежими томатами, соусом коктейль и барбекю в мягкой пшеничной булочке. Картофель и
+                  соус приобретается отдельно
+                </span>
+                <button class="card__btn btn">387 ₽</button>
+                <img src="./assets/images/shared/new-tag.png" alt="new" class="card__tag">
+              </li>
+              <li class="card flex-column">
+                <img class="card__img" src="./assets/images/reccomendations/reccomendations-item-3.png"
+                  alt="Sushi Ebi" />
+                <h4 class="card__title">Суши Эби</h4>
+                <span class="card__description">
+                  Креветка
+                </span>
+                <button class="card__btn btn-light">130 ₽</button>
+                <img src="./assets/images/shared/new-tag.png" alt="new" class="card__tag">
+              </li>
+              <li class="card flex-column">
+                <img class="card__img" src="./assets/images/reccomendations/reccomendations-item-1.png"
+                  alt="Cheeseburger BBQ" />
+                <h4 class="card__title">Чизбургер барбекю</h4>
+                <span class="card__description">
+                  Соус коктейль, фарш из отборной говядины, маринованные огурцы, спелые томаты, сыр моцарелла, сыр
+                  чеддер, соус барбекю, хрустящий лук
+                </span>
+                <button class="card__btn btn-light">от 287 ₽</button>
+              </li>
+              <li class="card flex-column">
+                <img class="card__img" src="./assets/images/reccomendations/reccomendations-item-2.png"
+                  alt="Burger 'Two cheeses'" />
+                <h4 class="card__title">Бургер «Два сыра»</h4>
+                <span class="card__description">
+                  Ароматная котлета из мраморной говядины с сыром чеддер и моцарелла, хрустящим луком, маринованными
+                  корнишонами, свежими томатами, соусом коктейль и барбекю в мягкой пшеничной булочке. Картофель и
+                  соус приобретается отдельно
+                </span>
+                <button class="card__btn btn">387 ₽</button>
+                <img src="./assets/images/shared/new-tag.png" alt="new" class="card__tag">
+              </li>
+              <li class="card flex-column">
+                <img class="card__img" src="./assets/images/reccomendations/reccomendations-item-3.png"
+                  alt="Sushi Ebi" />
+                <h4 class="card__title">Суши Эби</h4>
+                <span class="card__description">
+                  Креветка
+                </span>
+                <button class="card__btn btn-light">130 ₽</button>
+                <img src="./assets/images/shared/new-tag.png" alt="new" class="card__tag">
               </li>
             </ul>
           </div>
@@ -717,6 +696,7 @@
       </div>
     </div>
   </footer>
+  <script src="./script.js"></script>
 </body>
 
 </html>

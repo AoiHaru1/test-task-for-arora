@@ -9,6 +9,11 @@
       flex-wrap: wrap;
       flex-basis: unset;
       gap: 32px 27px;
+      justify-content: center;
+    }
+
+    @media screen and (max-width: 518px) {
+      justify-content: flex-start;
     }
   }
 
@@ -17,7 +22,7 @@
     flex-basis: 186px;
     font-size: 14px;
     line-height: 20px;
-    color: rgb(217, 217, 217);
+    color: $footer-text;
 
     @media screen and (max-width: 660px) {
       flex-wrap: wrap;
@@ -25,6 +30,13 @@
       font-size: 12px;
       line-height: 16px;
       gap: 16px;
+    }
+  }
+
+  &__link {
+    transition: color 0.3s ease-in-out;
+    &:hover {
+      color: $footer-text-hover;
     }
   }
 }

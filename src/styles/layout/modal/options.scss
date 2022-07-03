@@ -1,10 +1,6 @@
 @import "../../abstracts/variables";
 
-.modal {
-  &__img {
-    margin-top: 1px;
-  }
-  
+.modal { 
   &__size-options, &__type-options {
     max-width: 428px;
     height: 40px;

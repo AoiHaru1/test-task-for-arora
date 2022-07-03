@@ -16,13 +16,13 @@
       top: 50%;
       z-index: -1;
 
-      @media screen and (max-width: 660px) {
+      @media screen and (max-width: 667px) {
         top: 43%;
         border-bottom: 2px dotted $black20;
       }
     }
 
-    @media screen and (max-width: 660px) {
+    @media screen and (max-width: 667px) {
       margin-left: 16px;
       gap: 20px;
     }
@@ -34,7 +34,7 @@
     line-height: 44px;
     background-color: $white;
 
-    @media screen and (max-width: 660px) {
+    @media screen and (max-width: 667px) {
       font-size: 20px;
       line-height: 28px;
     }
@@ -43,16 +43,16 @@
   &__step:first-child {
     padding-right: 17px;
 
-    @media screen and (max-width: 660px) {
+    @media screen and (max-width: 667px) {
       padding-right: 8px;
     }
   }
 
   &__step:nth-child(2) {
-    padding: 0 18;
+    padding: 0 18px;
 
-    @media screen and (max-width: 660px) {
-      padding: 0 8;
+    @media screen and (max-width: 667px) {
+      padding: 0 8px;
     }
   }
 
@@ -60,7 +60,7 @@
     padding-left: 18px;
     padding-right: 0px;
 
-    @media screen and (max-width: 660px) {
+    @media screen and (max-width: 667px) {
       padding-left: 8px
     }
   }
