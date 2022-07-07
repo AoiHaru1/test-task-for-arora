@@ -1,5 +1,5 @@
-### Запуск
+### Start
 
 # 1. npm i
 # 2. npm run start
-# 3. В терминале появится ссылка на лайв-сервер со сбилженной версией проекта.
+# 3. A link to the liveserver will appear in the terminal.
